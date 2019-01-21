@@ -37,6 +37,17 @@ These are the available functions:
 | arctangent | fast_atan | fast_atanf | fast_atanv | fast_atanfv |
 | inverse square root (1/sqrt) | fast_isqrt | fast_isqrtf | fast_isqrtv | fast_isqrtfv |
 
+## Basic Usage:
+
+Make sure that `_USE_MATH_DEFINES` is defined before everything else (otherwise your code won't build on Windows).
+```
+#define _USE_MATH_DEFINES
+#include <cmath>
+#include <cstring>
+#include "vdt/vdtMath.h"
+#include "vdt/stdwrap.h"
+```
+
 ## Related Documents:
    * A full characterisation of the accuracies please refer to this [presentation](http://indico.cern.ch/contributionDisplay.py?contribId=4&sessionId=9&confId=202688).
 
