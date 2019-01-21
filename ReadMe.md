@@ -44,8 +44,8 @@ Make sure that `_USE_MATH_DEFINES` is defined before everything else (otherwise 
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <cstring>
-#include "vdt/vdtMath.h"
-#include "vdt/stdwrap.h"
+#include "vdtMath.h"
+#include "stdwrap.h"
 ```
 
 ## Related Documents:
