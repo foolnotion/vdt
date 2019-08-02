@@ -9,7 +9,13 @@
 namespace vdt {
   
   template<typename T>
+  inline T fast_abs(T x) { return std::abs(x); }
+
+  template<typename T>
   inline T fast_sqrt(T x) { return std::sqrt(x); }
+
+  template<typename T>
+  inline T fast_cbrt(T x) { return std::cbrt(x); }
 
   template<typename T>
   inline T fast_div(T x,T y) { return x/y; }
