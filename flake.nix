@@ -11,6 +11,14 @@
           inherit system;
         };
       in rec {
+        packages.default = pkgs.llvmPackages_16.stdenv.mkDerivation {
+          name = "vdt";
+          src = self;
+          hardeningDisable = [ "all" ];
+          impureUseNativeOptimizations = true;
+          nativeBuildInputs = with pkgs; [ cmake ];
+        };
+
         devShells.default = pkgs.llvmPackages_16.stdenv.mkDerivation {
           name = "vdt-dev";
           hardeningDisable = [ "all" ];
